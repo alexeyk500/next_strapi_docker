@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "dev:local": "export $(cat .env.local | xargs ) && next dev",
+    "dev:local": "export $(cat ../dev-config-locally/.env | xargs ) && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
