@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1206px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #1d1b84;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0;
+  white-space: pre-line;
+  font-size: 14px;
+  color: #32324d;
+  row-gap: 8px;
+}
+
+.subTitle {
+  color: #006096;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 24px;
+  row-gap: 24px;
+}

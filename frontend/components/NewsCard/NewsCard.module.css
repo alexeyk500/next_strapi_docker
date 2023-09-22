@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  padding: 12px 24px;
+  border: 1px solid gray;
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4945ff;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 14px;
+  color: #193c47;
+  margin-bottom: 12px
+}
+
+.imgContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.img {
+  height: 400px;
+  width: 600px;
+  object-fit: contain;
+}
