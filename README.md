@@ -1,6 +1,6 @@
 # next_strapi_docker
 
-## For locally Next Development
+### For locally Next Development
 #1. Go to "dev-config" and run command docker-compose up --build
     
 (after then of two containers with cms and postgres db will run)
@@ -10,5 +10,5 @@
 #3. Project will start on http://localhost:3000
 
 
-## For Docker container production
+### For Docker container production
 
