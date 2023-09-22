@@ -13,7 +13,7 @@ services:
     volumes:
       - ../frontend:/usr/app
     networks:
-      - strapi
+      - strapi_network
     depends_on: [db, cms]
 
   cms:
@@ -35,7 +35,7 @@ services:
     volumes:
       - ../cms:/usr/app
     networks:
-      - strapi
+      - strapi_network
     depends_on: [db]
 
   db:
@@ -50,9 +50,10 @@ services:
     volumes:
       - db:/var/lib/postgresql/data
     networks:
-      - strapi
+      - strapi_network
 
 networks:
-  strapi:
+  strapi_network:
 volumes:
   db:
+    driver: local

@@ -4,9 +4,12 @@ import NewsCard from "../../components/NewsCard/NewsCard";
 
 const API_URI = process.env.API_URI;
 const API_TOKEN = process.env.API_TOKEN
-
 console.log('API_URI', API_URI)
 console.log('APP_TOKEN', API_TOKEN)
+
+
+export const revalidate = 60;
+
 
 export default async function Home() {
 
@@ -20,7 +23,7 @@ export default async function Home() {
       Authorization: `Bearer ${API_TOKEN}`,
       ContentType: "application/json"
     },
-    next: { revalidate: 60 }
+    // next: { revalidate: 60 }
   })
 
   const articleData = await articleRes.json();
@@ -32,7 +35,7 @@ export default async function Home() {
       Authorization: `Bearer ${API_TOKEN}`,
       ContentType: "application/json"
     },
-    next: { revalidate: 60 },
+    // next: { revalidate: 60 },
   })
   const newsData = await newsRes.json();
   console.log('newsData.meta', newsData.meta)
